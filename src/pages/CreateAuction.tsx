@@ -21,7 +21,7 @@ const CreateAuction: React.FC = () => {
     src: string,
     size: string,
     name: string,
-  }
+  };
 
   const userData = useSelector((data: SystemState) => data);
   const [state, setState] = React.useState<typeState>();
