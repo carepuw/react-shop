@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none
+}
+
+.items-container {
+  padding: 1em 3em;
+  display: grid;
+  grid-template-columns: 16% 16% 16% 16% 16% 16%;
+  justify-content: space-between;
+  row-gap: 1rem;
+}
+
+.container {
+  margin: auto;
+  width: 100%;
+  max-width: 1200px;
+}
+
+/* =================== */
+
+.post-header {
+  display: flex;
+}
+.post-header--text {
+  flex: 1;
+  padding: 1em;
+  height: 100;
+}
+
+.image-prev-container {
+  width: 180px;
+  height: calc(100% - 46px - 2rem);
+  overflow: hidden;
+}
+.image-prev-container:hover .div-prev{
+  top: -23px;
+}
+.img-prev {
+  width: 180px;
+}
+
+.div-prev {
+  width: 180px;
+  height: 24px;
+  position: relative;
+  top: 0;
+  background-color: rgb(100, 100, 100);
+  display: flex;
+  justify-content: space-between;
+  padding: 0 0.1rem;
+  transition: all 0.2s ease-in-out;
+}
+.div-prev span {
+  max-width: 90px;
+  overflow: hidden;
+  height: 24px;
+  white-space: nowrap;
+  text-overflow: ellipsis
+}
+
+.image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1em;
+  background-color: rgb(68, 68, 68);
+  width: 70%;
+}
+
+.post-button {
+  font-size: 1.4em
+}
+
+/* ================== */
+
+.space {
+  display: flex;
+  justify-content: space-between;
+}
+
+.word-break {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis
+}
+
+.ph-text {
+  opacity: 0.6;
+  font-size: 0.9rem;
+}
+
+.mt1 {
+  margin-top: 1rem;
+}
+
+.ml1 {
+  margin-left: 1rem;
+}
